@@ -1,0 +1,263 @@
+*{ 
+    margin: 0; padding: 0;
+}
+
+a{ 
+    color: #222222; text-decoration: none;
+}
+
+li, dt, dd{ 
+    list-style: none; 
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rel{
+     position: relative;
+}
+
+.abs{ 
+    position: absolute; 
+}
+
+.d-block{ 
+    display: block;
+}  
+
+.d-none{ 
+    display: none;
+}
+
+.d-flex{ 
+    display: flex; 
+}
+
+.justify-content-between{ 
+    justify-content: space-between; 
+}
+
+.align-items-center{ 
+    align-items: center; 
+}
+
+#hd{ 
+    background-color: black; 
+}
+
+#hd a{ 
+    color: white; 
+}
+
+#hd h1 a { 
+    font-size: 1.5em;
+}
+
+#gnb li{
+    margin-left: 1rem; 
+} 
+
+#gnb li a{ 
+    padding: 16px; 
+    border-radius: 5px; 
+    transition: 0.5s; 
+    display: inline-block;
+} 
+
+#gnb  li:hover  a{ 
+    background-color: rgb(255, 155, 201); color: black; 
+}
+
+#gnb > li:hover ul{ 
+    height: 160px; 
+}
+
+#gnb ul{ 
+    border: 1px solid black; 
+    background-color: white; 
+    width: 120px; 
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden; 
+    border-radius: 30px; 
+}
+
+#gnb ul a{
+    color: black; display: block; 
+}
+
+.img1{
+    position: relative;
+    width: 600px;
+    height: auto;
+    border: 5px solid gray;
+    border-radius: 5px;
+    padding: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.6px;
+}
+
+p{
+    text-align: center;
+}
+
+section {
+    padding: 50px;
+}
+
+footer {
+    background-color: black;
+    color: rgb(255, 155, 201);
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.teamName{
+    text-align: center;
+    color: rgb(255, 155, 201);
+    font-size: 20px;
+}
+
+.highlight{
+    border-bottom: 7px solid rgb(255, 155, 201); padding: 0 0 0 0.2em; 
+}
+
+.highlight2{
+   
+    border-bottom: 3px dashed rgba(255, 155, 201, 0.5); padding: 0  0.2em 0 0; margin-left: 200px;
+} 
+.highlight3 {
+     background-color: #ffe6ff;    
+}   
+
+@keyframes fadeIn {
+    from {
+         opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+.animated-text {
+    animation: fadeIn 1.5s ease-in-out;
+    font-size: 120%;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'SUITE-Regular', sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+.pIn{
+    text-align: center;
+    font-size: 110%;
+}
+
+.title1{
+    font-size: 4em;
+    text-align: center;
+    opacity: 0.8;
+}
+
+#slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;  
+    height: 350px;
+    box-sizing: border-box;
+}
+
+.image-box {
+        
+    width: 10000px;
+    height:100%;
+    display:flex;
+    flex-wrap:nowrap;
+    animation: bannermove 30s linear infinite;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    padding: auto;
+    margin: auto;
+    transform: translate(42px, 18px);
+}
+
+.image-box > div {
+     margin: 0px -1px 0px 0px;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 65px;
+    background-color: rgb(255, 155, 201);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    font-size: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.stiker{
+    margin-right: 10px;
+}
+
+h2{
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 200px;
+}
+
+h3{
+    text-align: left;
+    margin-left: 250px;
+}
